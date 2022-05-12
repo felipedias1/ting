@@ -15,4 +15,3 @@ class Queue:
         if 0 > index or index >= len(self.data):
             raise IndexError
         return self.data[index]
-        
