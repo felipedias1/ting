@@ -1,7 +1,5 @@
-from importlib.resources import path
 import sys
 from ting_file_management.file_management import txt_importer
-
 
 
 def process(path_file, instance):
@@ -19,7 +17,7 @@ def process(path_file, instance):
 
 def remove(instance):
     if instance.__len__() == 0:
-        return sys.stdout.write('Não há elementos\n')      
+        return sys.stdout.write('Não há elementos\n')
     remove = instance.dequeue()
     return sys.stdout.write(f"Arquivo {remove} removido com sucesso\n")
 
